@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.docker</groupId>
-	<artifactId>postgres</artifactId>
+	<artifactId>xyinc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>xyinc</name>
 	<description>Spring Docker</description>

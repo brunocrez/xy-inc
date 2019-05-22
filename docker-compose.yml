@@ -3,6 +3,7 @@ version: '3'
 services:
   db:
     image: postgres
+    container_name: xyinc_db
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
@@ -13,6 +14,7 @@ services:
       - ./pgdata:/docker-entrypoint-initdb.d
   app:
     image: app-image
+    container_name: xyinc_app
     build:
       context: ./
       dockerfile: Dockerfile
