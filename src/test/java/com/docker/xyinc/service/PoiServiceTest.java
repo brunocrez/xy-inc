@@ -4,20 +4,16 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.test.context.SpringBootTest;
 
+import com.docker.xyinc.XyIncApplicationTests;
 import com.docker.xyinc.builder.PoiBuilder;
 import com.docker.xyinc.model.Poi;
 import com.docker.xyinc.repository.PoiRepository;
 
-@RunWith(MockitoJUnitRunner.class)
-@SpringBootTest
-public class PoiServiceTest {
+public class PoiServiceTest extends XyIncApplicationTests {
 
 	@Mock
 	private PoiRepository poiRepository;

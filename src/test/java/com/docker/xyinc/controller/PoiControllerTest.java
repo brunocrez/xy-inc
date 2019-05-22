@@ -11,25 +11,21 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
+import com.docker.xyinc.XyIncApplicationTests;
 import com.docker.xyinc.builder.PoiBuilder;
 import com.docker.xyinc.model.Poi;
 import com.docker.xyinc.service.PoiService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@RunWith(MockitoJUnitRunner.class)
-@SpringBootTest
-public class PoiControllerTest {
+public class PoiControllerTest extends XyIncApplicationTests {
 
 	private final String URL = "http://localhost:8080/poi";
 	private List<Poi> pois;
@@ -103,7 +99,6 @@ public class PoiControllerTest {
 		}
 	}
 	
-	/* Teste de cenário de erro, com uma das coordenadas negativas */
 	@Test
 	public void saveNegativeTest() {
 		Poi poi = new Poi("Ponto de Interesse", 5, -2);

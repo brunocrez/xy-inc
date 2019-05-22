@@ -34,7 +34,6 @@ public class PoiBuilder {
 		
 		List<Poi> pois = createListPois();
 		
-		/* Seleção de POIs de acordo com o enunciado do problema (x=20, y=10, dMax=10) */
 		this.poisInRange.add(pois.get(0)); 
 		this.poisInRange.add(pois.get(2)); 
 		this.poisInRange.add(pois.get(4)); 
