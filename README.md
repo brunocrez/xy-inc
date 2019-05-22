@@ -14,7 +14,9 @@ Este projeto foi desenvolvido utilizando Java e Spring Boot. Foi utilizado **Doc
 
 2 - Acesse o diretório clonado utilizando o **terminal** e execute os comandos:    
 
-$ mvn clean install -DskipTests    
+$ mvn clean install -DskipTests   
+
+$ docker-compose build 
 
 $ docker-compose up    
 
@@ -24,7 +26,7 @@ $ docker-compose up
    
 	POST    
 	
-	https://localhost:8080/poi  
+	http://localhost:8080/poi  
 	
 	{ "nome": "Churrascaria Tropeiro", "x": 27, "y": 12 }
 	
@@ -32,13 +34,13 @@ $ docker-compose up
  
 	GET    
 	
-	https://localhost:8080/poi/getAll  
+	http://localhost:8080/poi/getAll  
 	
 3 - Listar Pontos de Interesse por Proximidade   
  
 	GET    
 	
-	https://localhost:8080/poi/inRange?x=20&y=10&dMax=10
+	http://localhost:8080/poi/inRange?x=20&y=10&dMax=10
 	
 	Pode-se alterar os valores dos parâmetros x, y e dMax para obter diferentes pontos de interesse
 

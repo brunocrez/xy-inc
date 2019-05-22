@@ -11,7 +11,7 @@
 	<groupId>com.docker</groupId>
 	<artifactId>postgres</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>postgres</name>
+	<name>xyinc</name>
 	<description>Spring Docker</description>
 
 	<properties>
