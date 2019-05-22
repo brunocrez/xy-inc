@@ -46,4 +46,4 @@ Este projeto foi desenvolvido utilizando Java e Spring Boot. Foi utilizado **Doc
 
 Para executar os testes separadamente, execute o seguinte comando:
 
-	$mvn test
+	$ mvn test
