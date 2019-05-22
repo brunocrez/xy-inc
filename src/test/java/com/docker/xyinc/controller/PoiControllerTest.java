@@ -82,14 +82,13 @@ public class PoiControllerTest extends XyIncApplicationTests {
 	}
 	
 	@Test
-	public void saveTest() {
-		Poi poiBuider = new PoiBuilder().buildPoi();
+	public void saveTest() {		
 		
 		for (Poi poi : pois) {
 			try {
 				mockMvc.perform(post(URL)
 						.contentType(MediaType.APPLICATION_JSON_UTF8)
-						.content(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(poiBuider)))
+						.content(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(poi)))
 				.andExpect(status().is2xxSuccessful());
 			} catch (JsonProcessingException e) {
 				e.printStackTrace();
